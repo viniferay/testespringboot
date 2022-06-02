@@ -5,6 +5,7 @@ on:
     branches:
       - 'master'
 
-steps:
-  - name: Run Test
-    run: mvn test
+jobs:
+  steps:
+    - name: Run Test
+      run: mvn test
