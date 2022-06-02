@@ -6,6 +6,9 @@ on:
       - 'master'
 
 jobs:
+  build:
+
+    runs-on: amazoncorretto
   steps:
     - name: Run Test
       run: mvn test
