@@ -1,0 +1,10 @@
+name: Check Quality Code
+
+on:
+  push:
+    branches:
+      - 'master'
+
+steps:
+  - name: Run Test
+    run: mvn test
