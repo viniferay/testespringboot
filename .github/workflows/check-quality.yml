@@ -8,11 +8,9 @@ on:
 jobs:
   build:
 
-    runs-on: amazoncorretto
-    permissions:
-      contents: read
-      packages: write
+    runs-on: ubuntu-latest
 
     steps:
+      uses: actions/setup-java@v3
     - name: Run test
       run: mvn test 
