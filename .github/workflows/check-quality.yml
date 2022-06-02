@@ -10,6 +10,6 @@ jobs:
 
     runs-on: amazoncorretto
   steps:
-    - name: Run Test
+    - name: Run Tests
       run: mvn test
-
+  
