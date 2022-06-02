@@ -2,7 +2,8 @@
 # For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
 
 name: Maven Package
-
+env:
+  OLA: ola
 on: [push]
 
 jobs:
@@ -25,4 +26,5 @@ jobs:
     
     - name: Run Tests
       run: mvn test
-   
+    - name: OLA MUNDO
+      run: echo ${OLA}      
